@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speedy Blupi Web Games</title>
+<style>
+:root {
+    --bg: #fff4b8;
+    --bg-deep: #f6c43b;
+    --panel: #fff8d8;
+    --panel-strong: #ffe27a;
+    --yellow: #ffbf2f;
+    --yellow-dark: #d89000;
+    --text: #2b2100;
+    --muted: #5f4a00;
+    --border: #e0a500;
+    --blue: #2f80ed;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:
+        radial-gradient(circle at top left, rgba(255, 255, 255, 0.95), transparent 35%),
+        linear-gradient(180deg, #ffe680 0%, var(--bg) 45%, #fff9dc 100%);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 28px 20px 18px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    color: #3a2a00;
+    text-shadow: 0 3px 0 rgba(255, 255, 255, 0.65);
+}
+
+header p {
+    max-width: 720px;
+    margin: 10px auto 0;
+    color: var(--muted);
+    font-size: 1rem;
+}
+
+main {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 10px 20px 20px;
+}
+
+.games {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 28px;
+    margin-top: 8px;
+}
+
+.game-card {
+    overflow: hidden;
+    background: linear-gradient(180deg, #fffef3, #fff8d8);
+    border: 2px solid var(--border);
+    border-radius: 22px;
+    box-shadow: 0 14px 34px rgba(120, 80, 0, 0.22);
+}
+
+.game-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    display: block;
+    background:
+        linear-gradient(180deg, #9ee8ff 0%, #c8f2b4 65%, #fff0a8 100%);
+    border-bottom: 2px solid var(--border);
+    padding: 12px;
+}
+
+.game-content {
+    padding: 22px 26px 24px;
+}
+
+.game-content h2 {
+    margin: 0 0 12px;
+    font-size: 1.65rem;
+    color: #2b2100;
+}
+
+.status {
+    display: inline-block;
+    margin-bottom: 16px;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: #fff0ad;
+    color: #5a4200;
+    border: 1px solid #e0a500;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.game-content p {
+    margin: 0 0 20px;
+    color: var(--muted);
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 12px;
+    background: linear-gradient(180deg, #ffe16a, #ffb22e);
+    color: #201600;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #c98400;
+    box-shadow: 0 7px 16px rgba(216, 144, 0, 0.28);
+}
+
+.button:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.04);
+}
+
+.notes {
+    margin-top: 34px;
+    padding: 20px 24px;
+    background: #fff8d8;
+    border: 2px solid var(--border);
+    border-radius: 18px;
+    color: var(--muted);
+    box-shadow: 0 10px 24px rgba(120, 80, 0, 0.12);
+    margin-top: 24px;
+}
+
+footer {
+    text-align: center;
+    padding: 34px 20px 46px;
+    color: #7a5a00;
+    font-size: 0.95rem;
+}
+</style>
+</head>
+<body>
+<header>
+    <h1>Speedy Blupi Web Games</h1>
+    <p>
+        Experimental web versions of Speedy Blupi and Speedy Eggbert games,
+        playable directly in the browser.
+    </p>
+</header>
+
+<main>
+    <section class="games">
+        <article class="game-card">
+            <img
+                src="https://drive.openeggbert.com/Blupi/Games/Speedy_Blupi_(Windows_Phone)/screenshots/blupi_windows_phone.png"
+                alt="Speedy Blupi 2013 Windows Phone screenshot"
+            >
+
+            <div class="game-content">
+                <h2>Speedy Blupi 2013</h2>
+                <div class="status">Windows Phone version · Fully functional</div>
+
+                <p>
+                    A fully functional web port of the Windows Phone version of
+                    Speedy Blupi 2013. The game is playable, including sound.
+                    Save-state persistence is not implemented yet, so the game
+                    starts fresh after reloading the page.
+                </p>
+
+                <a class="button" href="/SpeedyBlupi2013/ target="_blank" ">Play Speedy Blupi 2013</a>
+            </div>
+        </article>
+
+        <article class="game-card">
+            <img
+                src="https://drive.openeggbert.com/Home/Speedy_blupi_screenshot.png"
+                alt="Speedy Eggbert II screenshot"
+            >
+
+            <div class="game-content">
+                <h2>Speedy Eggbert II</h2>
+                <div class="status">Decompiled Windows version · Partially functional</div>
+
+                <p>
+                    A decompiled web version of Speedy Eggbert II. It is currently
+                    only partially functional. Save-state persistence is not
+                    implemented yet, sound works, music does not work in the web version
+                    for now.
+                </p>
+
+                <a class="button" href="/SpeedyEggbertII/ target="_blank" ">Play Speedy Eggbert II</a>
+            </div>
+        </article>
+    </section>
+
+<section class="notes">
+    <strong>Note:</strong>
+    <ul>
+    <li>These browser versions are experimental ports. </li>
+    <li>Some features may still be missing or incomplete depending on the game.</li> 
+    <li>The known issues and missing features are actively being worked on.</li>
+    <ul>
+</section>
+</main>
+
+<footer>
+    speedyblupi.com
+</footer>
+</body>
+</html>
