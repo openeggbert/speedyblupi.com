@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Speedy Blupi Web Games</title>
+    <title>Blupi Web Games</title>
 <style>
 :root {
     --bg: #fff4b8;
@@ -124,14 +124,13 @@ main {
 }
 
 .notes {
-    margin-top: 34px;
+    margin-top: 24px;
     padding: 20px 24px;
     background: #fff8d8;
     border: 2px solid var(--border);
     border-radius: 18px;
     color: var(--muted);
     box-shadow: 0 10px 24px rgba(120, 80, 0, 0.12);
-    margin-top: 24px;
 }
 
 footer {
@@ -144,9 +143,9 @@ footer {
 </head>
 <body>
 <header>
-    <h1>Speedy Blupi Web Games</h1>
+    <h1>Blupi Web Games</h1>
     <p>
-        Experimental web versions of Speedy Blupi and Speedy Eggbert games,
+        Experimental web versions of Speedy Blupi, Speedy Eggbert, and Planet Blupi games,
         playable directly in the browser.
     </p>
 </header>
@@ -166,12 +165,13 @@ footer {
                 <p>
                     A fully functional web port of the Windows Phone version of
                     Speedy Blupi 2013. The game is playable, including sound.
-                    Save-state <span style="color:green; background:yellow;font-weight:bold">persistence is implemented</span>, so the game remembers its state after reloading the page.
+                    Save-state <span style="color:green; background:yellow;font-weight:bold">persistence is implemented</span>,
+                    so the game remembers its state after reloading the page.
                 </p>
 
                 <a class="button" href="/SpeedyBlupi2013/" target="_blank">Play Speedy Blupi 2013 - modern C++ version with persistence</a>
                 <br><br>
-                <a class="button" style="color:grey;" href="/SpeedyBlupi2013CSharp/" target="_blank">Play Speedy Blupi 2013 -   obsolete C# version without persistence</a>
+                <a class="button" style="color:grey;" href="/SpeedyBlupi2013CSharp/" target="_blank">Play Speedy Blupi 2013 - obsolete C# version without persistence</a>
             </div>
         </article>
 
@@ -187,24 +187,44 @@ footer {
 
                 <p>
                     A decompiled web version of Speedy Eggbert 2. It is currently
-                    <span style="color:red; background:yellow;font-weight:bold">only partially functional</span>. Save-state persistence is not
-                    implemented yet, sound works, music does not work in the web version
+                    <span style="color:red; background:yellow;font-weight:bold">only partially functional</span>.
+                    Save-state persistence is not implemented yet, sound works, music does not work in the web version
                     for now.
                 </p>
 
                 <a class="button" href="/SpeedyEggbert2/" target="_blank">Play Speedy Eggbert 2</a>
             </div>
         </article>
+
+        <article class="game-card">
+            <img
+                src="https://drive.openeggbert.com/Blupi/Games/503c7b5e-57c0-4734-8c1c-aefec6a86346.jpg"
+                alt="Planet Blupi screenshot"
+            >
+
+            <div class="game-content">
+                <h2>Planet Blupi</h2>
+                <div class="status">Windows version · Newly running on web</div>
+
+                <p>
+                    A web version of Planet Blupi. This game is now also running directly
+                    in the browser as an experimental port. Some features may still be
+                    incomplete while the web support is being improved.
+                </p>
+
+                <a class="button" href="/PlanetBlupi/" target="_blank">Play Planet Blupi</a>
+            </div>
+        </article>
     </section>
 
-<section class="notes">
-    <strong>Note:</strong>
-    <ul>
-    <li>These browser versions are experimental ports. </li>
-    <li>Some features may still be missing or incomplete depending on the game.</li> 
-    <li>The known issues and missing features are actively being worked on.</li>
-    <ul>
-</section>
+    <section class="notes">
+        <strong>Note:</strong>
+        <ul>
+            <li>These browser versions are experimental ports.</li>
+            <li>Some features may still be missing or incomplete depending on the game.</li>
+            <li>The known issues and missing features are actively being worked on.</li>
+        </ul>
+    </section>
 </main>
 
 <footer>
